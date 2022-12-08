@@ -5,54 +5,151 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Index</title>
-  <link rel="icons" name="x-icon/image" href="developer.png" />
+  <title>My Profile</title>
+  <link rel="icon" name="x-icon/image" href="developer.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+
 </head>
 
 <style>
-  header {
-    background-color: rgb(245, 197, 221);
+  * {
+    font-family: "Josefin Sans", sans-serif;
+    /* background-color: rgb(227, 243, 245); */
+    margin: 0;
+    padding-left: 0;
+  }
+
+
+  body {
+    background-image: url(bubble.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  footer label {
+    padding-right: 20px;
+  }
+
+  .fontawesome i {
+    font-size: 22px;
+    background-color: rgb(236, 216, 100);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 2px;
+    border-radius: 50%;
+    color: rgb(54, 138, 6);
+  }
+
+  header label {
+    margin-right: 20px;
+    margin-top: 20px;
+    color: purple;
+  }
+
+  nav a {
+    font-size: larger;
+    font-style: bold;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-shadow: 1.5px 1.5px 2px rgb(215, 230, 15);
+    text-decoration: none;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+  nav {
+    border: 1px solid rgb(226, 220, 220);
+    width: fit-content;
+    height: 20px;
+    border-radius: 20px;
+    background-color: rgb(5, 68, 104);
+    margin-bottom: 10px;
+  }
+
+  a:hover {
+    color: rgb(29, 122, 6);
+  }
+
+  .icons i {
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: rgb(223, 21, 122);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: aliceblue;
+  }
+
+  .icon:hover {
+    background-color: green;
+  }
+
+  iframe {
+    box-shadow: 5px 5px 6px coral;
+  }
+
+  marquee {
+    color: rgb(3, 173, 3);
+    text-shadow: 2px 2px 3px rgba(200, 226, 106, 0.808);
+    font-size: large;
+    margin-top: 10px;
+    text-shadow: 1.5px 1px 1.5px rgb(4, 59, 2);
   }
 </style>
+
+
 
 <body>
   <!-- using fontawesome -->
   <header>
-    <i class="fa fa-user" aria-hidden="true" style="color: blueviolet;"></i> Sushant Jadhav&nbsp;&nbsp;&nbsp;
-    <i class="fa fa-phone-square" aria-hidden="true" style="color: green"></i> 9096046516&nbsp;&nbsp;&nbsp;
-    <i class="fa fa-envelope" aria-hidden="true" style="color:red"></i> sushantjadhav2015@gmail.com
+    <div class="fontawesome">
+      <i class="fa fa-user" aria-hidden="true"></i>
+      <label>Sushant Jadhav</label>
+      <i class="fa fa-phone-square" aria-hidden="true"></i>
+      <label>9096046516</label>
+      <i class="fa fa-envelope" aria-hidden="true"></i><label>sushantjadhav2015@gmail.com</label>
+    </div>
   </header>
   <br />
 
   <!-- navigation of semantic tag  -->
-  <div>
-    <a class="hme" href="home.html" target="frame 1">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="techStack.html" target="frame 1">Technology Stack</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a class="hme" href="education.html" target="frame 1">Education</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="hobbies.html" target="frame 1">Hobbies</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a class="hme" href="personal.html" target="frame 1">Personal</a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <nav>
+    <a href="home.html" target="frame 1">Home</a>
+    <a href="techStack.html" target="frame 1">Technology Stack</a>
+    <a href="education.html" target="frame 1">Education</a>
+    <a href="hobbies.html" target="frame 1">Hobbies</a>
+    <a href="personal.html" target="frame 1">Personal</a>
     <a href="contactUs.html" target="frame 1">Contact Us</a>
-
-  </div>
+  </nav>
 
   <!-- iframe tag used -->
   <iframe width="900px" height="500px" name="frame 1" src="home.html"></iframe><br />
 
+  <!-- marquee used  -->
+  <marquee behavior="sliding" direction="margin-right" width="800px">Code mind Technology Ltd.</marquee>
+
   <!-- social media icons with its link -->
   <footer>
-    <label>Follow me</label>&nbsp;&nbsp;&nbsp;
-    <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square"
-        aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
 
-    <a href="https://www.google.com" target="_blank"><i class="fa fa-google"
-        aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
-
-    <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"
-        aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
-
-    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-official"
-        aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+    <div class="icons">
+      <label>Follow me</label>
+      <a class="linkedin" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square"
+          aria-hidden="true"></i></a>
+      <a class="google" href="https://www.google.com" target="_blank"><i class="fa fa-google"
+          aria-hidden="true"></i></a>
+      <a class="instagram" href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"
+          aria-hidden="true"></i></a>
+      <a class="facebook" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-official"
+          aria-hidden="true"></i></a>
+    </div>
   </footer>
 </body>
 

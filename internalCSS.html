@@ -6,6 +6,12 @@
 
     <!-- inline CSS -->
     <style>
+        body {
+            background-image: url(developer.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
         #objective {
             color: aqua;
             text-align: center;
@@ -24,12 +30,55 @@
             text-align: left;
             text-transform: unset;
             font-weight: bolder;
+            text-shadow: 5px 4px 8px rgb(255, 17, 48);
         }
 
         /* groping selector */
         h2,
         p {
             color: blueviolet;
+        }
+
+        #roles {
+            margin-bottom: 50px;
+            border: 2px dotted palevioletred;
+        }
+
+        #para {
+            margin-top: 100px;
+            border: 2px solid pink;
+            width: 200px;
+            height: 100px;
+            border-radius: 20px 2px;
+            background-color: greenyellow;
+            /* in box shadow frist horizontal offset then vertical offset then spering value and then colour */
+            box-shadow: 50px 20px 10px red;
+        }
+
+        /* in this selector we are using ol means name selector with the help of ots chaild selector in that dont use(,) */
+        ol li {
+            padding: 5px;
+            list-style-type: upper-alpha;
+            /* list-style-type: lower-roman; */
+            list-style-type: upper-roman;
+            color: rgb(11, 3, 19);
+        }
+
+        ul li {
+            padding: 2px;
+            list-style-type: square;
+        }
+
+        li::marker {
+            color: red;
+        }
+
+        li::selection {
+            color: blueviolet;
+        }
+
+        .carrerObjective::selection {
+            color: red;
         }
     </style>
 </head>
@@ -58,6 +107,41 @@
     </p>
 
     <h2> Roles and Responsibilites</h2>
+    <h2 id="roles"> Roles and Responsibilities </h2>
+
+    <p id="para">
+        This is para
+    </p>
+
+    <marquee behavior="sliding" direction="right" width="500px" height="20px" colour="brown">Professional Summary
+    </marquee>
+
+    <ul>
+        <li>Having 1 year of experieance in developing Single page Web Page application using <span>Angular
+                8</span>,HTML.5, Bootstrap 5, JavaScript, TypeScript </li>
+        <li>Experieance on working with version control system - GIT and GitHub</li>
+        <li>Experieance working with JIRA for user stories and bug tacking</li>
+        <li>Strong Debugging & Troubleshooting code experieance using Chrome Developer tool</li>
+        <li>Working exposure on ID's like VS Code and Notepad++</li>
+        <li>Good working experieance under Aglie methodologies enviroment</li>
+        <li>Experieance in using Chrome Developer Tool for debugging and Troubleshooting the code</li>
+        <li>Knowledge of NodeJS</li>
+        <li>Ability to work with pepole at all levels in the program</li>
+    </ul>
+
+    <ol>
+        <li>Having 1 year of experieance in developing Single page Web Page application using <span>Angular
+                8</span>,HTML.5, Bootstrap 5, JavaScript, TypeScript </li>
+        <li>Experieance on working with version control system - GIT and GitHub</li>
+        <li>Experieance working with JIRA for user stories and bug tacking</li>
+        <li>Strong Debugging & Troubleshooting code experieance using Chrome Developer tool</li>
+        <li>Working exposure on ID's like VS Code and Notepad++</li>
+        <li>Good working experieance under Aglie methodologies enviroment</li>
+        <li>Experieance in using Chrome Developer Tool for debugging and Troubleshooting the code</li>
+        <li>Knowledge of NodeJS</li>
+    </ol>
+
+
 </body>
 
 </html>

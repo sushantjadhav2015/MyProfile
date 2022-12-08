@@ -2,39 +2,90 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        label {
+            color: rgb(7, 63, 116);
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            border-radius: 10px;
+            border: 1.5px solid red;
+            text-transform: capitalize;
+            background-color: aquamarine;
+            color: blueviolet;
+            width: 200px;
+            height: 20px;
+        }
+
+        textarea {
+            background-color: aquamarine;
+            border-radius: 10px;
+            color: blueviolet;
+        }
+
+        #submit {
+            border-radius: 5px;
+            border-color: green;
+            background-color: chartreuse;
+            transition: 0.1s;
+        }
+
+        #submit:hover {
+            color: red;
+        }
+
+        #reset {
+            border-radius: 10px;
+            background-color: rgb(230, 89, 89);
+            border-color: darkred;
+        }
+
+        #reset:hover {
+            color: green;
+        }
+    </style>
 </head>
 
 <body>
     <form>
         <table>
             <tr>
-                <td>Name</td>
-                <td><input type="text" placeholder="Enter full name" required autofocus></td>
+                <td><label>Name</label></td>
+                <td>
+                    <input type="text" placeholder="Enter full name" required autofocus />
+                </td>
             </tr>
             <tr>
-                <td>Mobile Number</td>
-                <td><input type="number" placeholder="only number" required></td>
+                <td><label>Mobile Number</label></td>
+                <td><input type="number" placeholder="only number" required /></td>
             </tr>
             <tr>
-                <td>Email</td>
-                <td><input type="text" placeholder="abc@gmail.com"></td>
+                <td><label>Email</label></td>
+                <td><input type="text" placeholder="abc@gmail.com" /></td>
             </tr>
             <tr>
-                <td>Inquiry</td>
+                <td><label>Inquiry</label></td>
                 <td><textarea cols="30" rows="7"></textarea></td>
             </tr>
             <tr>
-                <td><button>submit</button></td>
-                <td><button>Reset</button></td>
+                <td><button id="submit">submit</button></td>
+                <td><button id="reset">Reset</button></td>
             </tr>
         </table>
     </form>
-
-
 </body>
 
 </html>

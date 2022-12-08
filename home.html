@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional summery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
     <style>
+        * {
+            font-family: "Josefin Sans", sans-serif;
+        }
+
         .career {
             background-color: aquamarine;
             color: brown;
@@ -20,6 +26,21 @@
         span {
             color: blueviolet;
             font-size: medium;
+        }
+
+        ul li {
+            padding-bottom: 20px;
+            list-style-type: square rgb(180, 36, 36);
+            list-style-type: upper-roman;
+        }
+
+        /* this pesudo elemet is used to apply css on li symbles or text  */
+        li::marker {
+            color: red;
+        }
+
+        li::selection {
+            color: blueviolet;
         }
     </style>
 </head>
